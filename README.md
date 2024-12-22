@@ -1,4 +1,8 @@
-Домашка с предмета "Основы Python".
-Осень-зима 2024-2025.
-1 семестр, 4 курс.
-Преподаватель - Гиниятова Д. Х.
+Homework.
+
+Discipline - 'Python Basics'.
+
+Autumn-winter 2024-2025.
+1st semester, 4th year.
+
+Teacher - Giniyatova D.Kh.
