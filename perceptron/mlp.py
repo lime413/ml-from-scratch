@@ -42,6 +42,7 @@ class multilayer_perceptron():
                 np.random.uniform(-1, 1, size=[self.layers[i], self.layers[i+1]]))
 
     def init_hidden_values(self, batch_size):
+        np.random.seed(2024)
         self.hidden_values = [np.empty((batch_size, layer))
                               for layer in self.layers]
 
