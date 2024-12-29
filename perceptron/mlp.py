@@ -12,7 +12,6 @@ class multilayer_perceptron():
         self.val_loss = list()
         self.val_acc = list()
         self.train_time = list()
-        self.total_time = list()
 
     def sigmoid(self, x):
         return 1./(1.+np.exp(-x))
@@ -127,14 +126,11 @@ class multilayer_perceptron():
             self.val_loss.append(val_loss)
             self.val_acc.append(val_acc)
 
-            total_time = round(time.time()-start, 3)
-            self.total_time.append(total_time)
-
             if (epoch+1) % 5 == 0:
-                print(f'Epoch {epoch+1}: loss = {train_loss.round(3)} | acc = {train_acc.round(3)} | \
-                    val_loss = {val_loss.round(3)} | val_acc = {val_acc.round(3)} | train_time = {train_time} | tot_time = {total_time}')
+                print(f'Epoch {epoch+1}: loss = {train_loss.round(3)} | acc = {train_acc.round(3)} | val_loss = {
+                      val_loss.round(3)} | val_acc = {val_acc.round(3)} | train_time = {train_time} сек')
 
         with open('perceptron/weights.pickle', 'wb') as file:
             pickle.dump(self.weights, file)
-        with open('perceptron/architecture.pickle', 'wb') as file:
+        with open('perceptron/layers.pickle', 'wb') as file:
             pickle.dump(self.layers, file)
