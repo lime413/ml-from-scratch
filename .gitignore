@@ -1,2 +1,7 @@
 __pycache__
 tmp.py
+
+perceptron/layers.pickle
+perceptron/weights.pickle
+
+leafs_classification/leaves.zip
