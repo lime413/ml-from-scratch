@@ -5,4 +5,4 @@ perceptron/layers.pickle
 perceptron/weights.pickle
 
 leafs_classification/leaves.zip
-leafs_classification/images
+leafs_classification/data
