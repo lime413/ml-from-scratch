@@ -1,8 +1,2 @@
-Homework.
-
-Discipline - 'Python Basics'.
-
-Autumn-winter 2024-2025.
-1st semester, 4th year.
-
-Teacher - Giniyatova D.Kh.
+Machine learning algorithms and neural networks from scratch on Python: logistic regression, perceptron.
+On Pytorch: multi-class images classification
